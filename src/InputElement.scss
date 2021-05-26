@@ -1,0 +1,41 @@
+@import "node_modules/@bbva-web-components/bbva-foundations-sass/main";
+
+$primary-color: #29434e;
+$secondary-color: #546e7a;
+$third-color: #819ca9;
+$text-color: #fff;
+$input-width: 100vw;
+$font-family: sans-serif;
+
+:host {
+    * {
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: var(--primary-color, $primary-color);
+        display: inline-block;
+        border: none;
+        color: var(--text-color, $text-color);
+        font-family: var(--font-family, $font-family);
+        font-size: 17px;
+        padding: 1em 1em;
+        text-decoration: none;
+
+        &:hover {
+            background-color: var(--secondary-color, $secondary-color);
+        }
+        &:active {
+            position: relative;
+            top: 1px;
+        }
+    }
+
+    input {
+        width: var(--input-width, $input-width);
+    }
+
+    .selected {
+        box-shadow: inset 0px -5px 0px 0px var(--third-color, $third-color);
+    }
+}
