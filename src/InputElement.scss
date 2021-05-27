@@ -39,3 +39,7 @@ $font-family: sans-serif;
         box-shadow: inset 0px -5px 0px 0px var(--third-color, $third-color);
     }
 }
+
+:host(.red) input{
+    color: red;
+}

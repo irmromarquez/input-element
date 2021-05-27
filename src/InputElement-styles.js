@@ -28,4 +28,8 @@ export default css`:host * {
 :host .selected {
   box-shadow: inset 0px -5px 0px 0px var(--third-color, #819ca9);
 }
+
+:host(.red) input {
+  color: red;
+}
 `;

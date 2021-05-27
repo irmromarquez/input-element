@@ -37,6 +37,10 @@ export class InputElement extends LitElement {
     };
   }
 
+  get getInput() {
+    return this.shadowRoot.querySelector("input");
+  }
+
   constructor() {
       super();
       this.value = '';
@@ -44,7 +48,7 @@ export class InputElement extends LitElement {
 
   update() {
       super.update();
-      this.shadowRoot.querySelector("input").value = this.value;
+      this.getInput.value = this.value;
   }
 
   _inputEvent(e) {
